@@ -22,7 +22,6 @@ repository               : "KleineAT/kleineat.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : # 
   name             : #
   pronouns         : # example: "she/her"  
   bio              : #
