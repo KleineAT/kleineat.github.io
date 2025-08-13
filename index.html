@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      Maintainer notes — How to add/update an event
+
+      1) Event metadata (title/description and social):
+         - Update the <title> and meta description below
+         - Update Open Graph tags (og:title, og:description, og:url) if needed
+
+      2) Header brand text (optional):
+         - See <header> → .brand
+
+      3) Hero copy (What is Kleine AT?):
+         - Edit the heading and introductory paragraphs in the first <section> under <main>
+
+      4) Next event card (date, venue, theme, organisers):
+         - Edit the <aside id="next"> block: date/time (📅), venue (📍), theme (🧭), organisers line
+
+      5) Syllabus/Program PDF:
+         - Replace the file in assets (e.g. assets/Kleine_AT_Syllabus.pdf)
+         - Update the link href in the "Inaugural theme" section
+
+      6) Schedule table:
+         - Edit rows under the "Day schedule" section
+
+      7) Registration:
+         - Update the button href under the "Registration" section once the form is ready
+
+      8) Footer year is auto-updated via assets/main.js (#year span)
+
+      9) Deployment (GitHub Pages):
+         - For a user/organization site named kleineat.github.io, GitHub Pages serves from repo root.
+           Option A (simple): move contents of /site to repository root (index.html and /assets)
+           Option B: keep /site and publish it using GitHub Actions (see README.md for workflow)
+
+      See README.md in repo root for a complete checklist and examples.
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kleine AT — Workshop, October 10, 2025</title>
+    <meta name="description" content="Kleine AT (Kleine Algebraische Topologie) — inaugural workshop, Fri 10 Oct 2025, MPIM Lecture Hall. A one‑day workshop series for early‑career algebraic topologists in NRW and neighboring regions." />
+
+    <meta property="og:title" content="Kleine AT — workshop series" />
+    <meta property="og:description" content="A one-day workshop series for early‑career algebraic topologists in NRW." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header__inner">
+        <a class="brand" href="./index.html" aria-label="Kleine AT home">
+          <span class="brand__icon" aria-hidden="true">k</span>
+          <span class="brand__text">Kleine AT</span>
+        </a>
+
+        
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <section class="section section--hero">
+        <div class="container grid grid--2">
+          <div>
+            <!-- Hero copy: update heading and intro paragraphs for each new edition -->
+            <h1 class="h1">Kleine AT</h1>
+            <p class="lead">A one-day workshop series for early‑career algebraic topologists in NRW and neighboring regions.</p>
+            <p>Each edition focuses on a single topic with five talks across the day. Hosts rotate among NRW universities.</p>
+            
+          </div>
+
+          <!-- Next event details: date, venue, theme, organisers -->
+          <aside id="next" class="card card--highlight">
+            <div class="card__header">
+              <h2 class="h4">Next event</h2>
+            </div>
+            <div class="card__body">
+              <p class="muted">Kleine AT — Inaugural Workshop</p>
+              <ul class="icon-list">
+                <li><span aria-hidden="true">📅</span> Fri, 10/10/2025 — 09:00–18:00</li>
+                <li><span aria-hidden="true">📍</span> MPIM Lecture Hall, Bonn</li>
+                <li><span aria-hidden="true">🧭</span> Theme: Spectral Sequences and the Even Filtration</li>
+              </ul>
+              <p class="small">Organisers: Tobias Barthel, David Bowman, Wern Juin Gabriel Ong</p>
+            </div>
+            
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="h3">What is Kleine AT?</h2>
+              <p>Kleine AT (Kleine Algebraische Topologie) is a new biannual workshop series designed for Master's and Ph.D. students in algebraic topology from universities across North Rhine-Westphalia and neighboring regions. This one-day intensive workshop focuses on a single, carefully chosen topic within algebraic topology, providing participants with an opportunity to deepen their understanding through a structured series of five one-hour talks given by fellow students. The format encourages active participation, community building, and knowledge sharing among early-career algebraic topologists, while rotating between participating universities to foster regional collaboration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="h3">Inaugural theme</h2>
+              <p>The inaugural event will explore “Spectral Sequences and the Even Filtration“, studying recent work by Antieau on spectral sequences and décalage, alongside applications to the even filtration developed by Hahn–Raksit–Wilson.</p>
+              <!-- Update the PDF filename/path as needed; keep assets in /assets -->
+              <p class="mt-2"><a class="button" href="assets/Kleine_AT_Syllabus.pdf" target="_blank">Program and abstracts (PDF)</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Edit the schedule rows for each edition -->
+          <h2 class="h3">Day schedule (template)</h2>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Session</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>09:30–10:00</td><td>Registration</td></tr>
+                <tr><td>10:00–11:00</td><td>Talk 1</td></tr>
+                <tr><td>11:00–11:15</td><td>Break</td></tr>
+                <tr><td>11:15–12:15</td><td>Talk 2</td></tr>
+                <tr><td>12:15–13:30</td><td>Lunch</td></tr>
+                <tr><td>13:30–14:00</td><td>Discussion &amp; Voting</td></tr>
+                <tr><td>14:00–15:00</td><td>Talk 3</td></tr>
+                <tr><td>15:00–15:30</td><td>Coffee Break</td></tr>
+                <tr><td>15:30–16:30</td><td>Talk 4</td></tr>
+                <tr><td>16:30–16:45</td><td>Break</td></tr>
+                <tr><td>16:45–17:45</td><td>Talk 5</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="registration" class="section">
+        <div class="container">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="h3">Registration</h2>
+              <p>The application form will follow shortly.</p>
+              <p>Registration will remain open until the day of the event to accommodate late signups. Participants interested in giving a talk should indicate their preferences when registering, with priority given to those who submit their preferences by <strong>September 1st</strong>. We will communicate speaker assignments as soon as possible after this date, though we may assign additional speakers after September 1st if needed. Travel reimbursement is available for participants who would travel more than 2.5 hours in each direction with regional trains, with <strong>September 1st</strong> as the hard deadline for reimbursement applications. All participants must register for the workshop, and we encourage early registration to help with planning.</p>
+              <!-- When ready, replace href with the live registration form URL -->
+              <a class="button button--primary" href="#" aria-describedby="reg-help">Registration form (coming soon)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__inner">
+        <p>
+          Questions? Email <a href="mailto:conference@mpim-bonn.mpg.de">conference@mpim-bonn.mpg.de</a>.
+        </p>
+        
+        <p class="muted small">© <span id="year"></span> Kleine AT — a one‑day workshop series for early‑career algebraic topologists in NRW and neighboring regions.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/main.js"></script>
+  </body>
+  </html>
+
