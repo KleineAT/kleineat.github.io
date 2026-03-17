@@ -69,7 +69,7 @@ a:hover { text-decoration: underline; }
 
 .grid { display: grid; gap: var(--space-8); }
 .grid--2 { grid-template-columns: 1fr; }
-@media (min-width: 900px) { .grid--2 { grid-template-columns: 1.3fr 1fr; } }
+@media (min-width: 900px) { .grid--2 { grid-template-columns: 1.3fr 1fr; align-items: start; } }
 
 .narrow { max-width: 760px; }
 .stack > * + * { margin-top: var(--space-4); }
